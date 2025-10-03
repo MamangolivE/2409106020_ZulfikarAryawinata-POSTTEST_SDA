@@ -18,8 +18,8 @@ void enqueue(Node*& front, Node*& rear, string document) {
     }
     // 2. Jika tidak kosong, sambungkan rear->next ke newNode, lalu update rear
     else {
-        rear->next = newNode; // sambungkan rear lama ke newNode
-        rear = newNode;       // update rear ke newNode
+        rear->next = newNode;
+        rear = newNode;
     }
     // --- LENGKAPI DI SINI ---
 }

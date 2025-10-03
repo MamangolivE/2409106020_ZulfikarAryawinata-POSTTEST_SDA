@@ -44,7 +44,7 @@ bool areBracketsBalanced(string expr) {
             if ((data == ')' && topChar != '(') ||
                 (data == '}' && topChar != '{') ||
                 (data == ']' && topChar != '[')) {
-                return false; // pasangan tidak cocok
+                return false;
             }
         }
     }

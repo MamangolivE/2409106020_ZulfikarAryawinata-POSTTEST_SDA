@@ -26,12 +26,12 @@ void sortedInsert(Node *&head_ref, int data) {
     // Kasus 2: Data baru lebih kecil dari head (sisipkan di awal)
     // 1. Jika data < head_ref->data, sisipkan sebelum head dan update head_ref
     if (data < head_ref->data) {
-        Node* tail = head_ref->prev; // node terakhir
+        Node* tail = head_ref->prev;
         newNode->next = head_ref;
         newNode->prev = tail;
         head_ref->prev = newNode;
         tail->next = newNode;
-        head_ref = newNode; // update head karena newNode jadi yang paling kecil
+        head_ref = newNode;
         return;
     }
     // Kasus 3: Cari posisi yang tepat (tengah/akhir)
